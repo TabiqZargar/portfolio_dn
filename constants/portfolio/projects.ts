@@ -69,247 +69,247 @@ export const portfolioProjects: PortfolioProject[] = [
     ],
   },
   //fund dashboard
-  {
-    type: "project",
-    slug: "fund-dashboard",
-    title: "Fund Dashboard",
-    col: 1,
-    order: 2,
-    media: [
-      {
-        type: "image",
-        src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/fund-dashboard.png",
-        alt: "Fund Dashboard main overview screen",
-      },
-      {
-        type: "image",
-        src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/fund-dashboard-2.png",
-        alt: "Fund Dashboard portfolio analytics screen",
-      },
-      {
-        type: "image",
-        src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/fund-dashboard-3.png",
-        alt: "Fund Dashboard fund performance screen",
-      },
-      {
-        type: "image",
-        src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/fund-dashboard-4.png",
-        alt: "Fund Dashboard detail screen",
-      },
-    ],
-    stack: [
-      "Next.js 16 (Turbopack)",
-      "React 19",
-      "TypeScript",
-      "Tailwind CSS",
-      "React Query (TanStack Query 5)",
-      "React Hook Form",
-      "Zod",
-      "shadcn/ui",
-      "Zustand",
-    ],
-    description:
-      "An enterprise fintech operations dashboard for fund managers and administrators. It provides centralized control over token lifecycle management—including investor subscriptions, redemptions, transfers, distributions, and compliance workflows. Built with Next.js 16, React 19, and TypeScript, the dashboard connects to a backend API, integrates role-based access control, and displays real-time operational data in a clean, scannable interface optimized for high-frequency trading and settlement operations.",
-    challenges: [
-      "Rendering large `transaction tables` for investors, subscriptions, redemptions, and transfers without visual noise or information overload.",
-      "Supporting `fund manager` and admin views with different permissions while keeping one cohesive design system.",
-      "Displaying live `compliance counts` with instant updates and drill-down actions without overloading the header UI.",
-      "Creating scannable `status chips` across workflows with clear colors, icons, and restrained enterprise styling.",
-    ],
-    solutions: [
-      "Used dense `14px tables`, wallet truncation, inline copy actions, tabular alignment, scoped row actions, and explicit empty/loading/error states.",
-      "Built role-gated routes, conditional actions, and page-level authorization without permission-check shimmer or fragmented UI patterns.",
-      "Created a unified `compliance panel` with Fund Health, count groups, dividers, muted headers, and API-driven status totals.",
-      "Mapped API status strings to readable labels with discrete badge styles, icons, and restrained active/frozen/approved color states.",
-    ],
-  },
-  //ulejra landing page
-  {
-    type: "project",
-    slug: "ulejra-site",
-    title: "Ulejra Landing Page",
-    col: 2,
-    order: 3,
-    media: [
-      {
-        type: "image",
-        src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/ulejra.jpeg",
-        alt: "Ulejra Site landing page screen",
-      },
-      {
-        type: "image",
-        src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/ulejra-1.png",
-        alt: "Ulejra Site landing page screen",
-      },
-    ],
-    stack: [
-      "Next.js 16",
-      "React 19",
-      "TypeScript",
-      "Tailwind CSS 4",
-      "Radix UI",
-      "Lucide Icons",
-      "Motion",
-      "OpenNext + Cloudflare Workers",
-      "Shadcn/ui",
-    ],
-    description:
-      "Ulejra is an institutional financial workflow infrastructure and marketing platform that serves treasury, compliance, settlement, and operational governance teams. Built with Next.js 16 and deployed via Cloudflare, it provides a light-only bordered institutional interface for managing digital asset programs, treasury coordination, and governed AI-assisted operations—with product-led storytelling through workflow mockups, dashboard previews, and audit trail visuals.",
-    challenges: [
-      "Keeping `full-width bordered bands`, `side rails`, and `max-w-7xl` containers consistent across responsive landing sections.",
-      "Embedding `dashboard mockups`, workflow previews, and ledger visuals as focal points without hurting performance or accessibility.",
-      "Converting dense desktop splits into clean mobile stacks while preserving `institutional hierarchy` and visual structure.",
-      "Using motion components like `SectionReveal`, `ShimmerText`, and grid effects without drifting into crypto-glow aesthetics.",
-    ],
-    solutions: [
-      "Standardized a `w-full border-y` band with an inner `mx-auto max-w-7xl border-x` container and repeated `GridSeparator` rhythm.",
-      "Placed product visuals inside controlled card containers using `bg-surface`, selective shadows, and minimal decorative layers.",
-      "Used responsive Tailwind layouts: `md:hidden` mobile cards, desktop split views, and single-column benefit stacks.",
-      "Kept motion restrained with short reveal transitions, `prefers-reduced-motion`, low-opacity grids, and limited shimmer usage.",
-    ],
-  },
-  // mof
-  {
-    type: "project",
-    slug: "mof",
-    title: "MOF Dashboard",
-    col: 1,
-    order: 5,
-    media: [
-      {
-        type: "image",
-        src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/mof-4.png",
-        alt: "MOF main landing page screen",
-      },
-      {
-        type: "image",
-        src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/mof-2.png",
-        alt: "MOF detail section screen",
-      },
-      {
-        type: "image",
-        src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/mof-3.png",
-        alt: "MOF secondary page screen",
-      },
-      {
-        type: "image",
-        src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/mof-1.png",
-        alt: "MOF content section screen",
-      },
-    ],
-    stack: [
-      "Next.js 16",
-      "React 19",
-      "Tailwind CSS",
-      "React Query (TanStack Query 5)",
-      "React Hook Form",
-      "Zod",
-      "shadcn/ui + Radix UI",
-      "Vercel AI SDK (Google Gemini)",
-      "Drizzle ORM",
-      "Neon Serverless DB",
-      "AWS Amplify",
-    ],
-    description:
-      "An enterprise Kubernetes pod management dashboard with real-time monitoring, AI-powered insights, and portfolio analytics. Built with Next.js 16 and Google Gemini integration, it provides fund managers with a unified control plane for managing distributed pod resources, viewing live operational metrics, and leveraging AI chat for portfolio analysis—all while maintaining secure multi-user authentication and role-based access.",
-    challenges: [
-      "Rendering live `SSE pod updates` with metrics, syntax highlighting, and consistent status badges without DOM bloat or re-render cascades.",
-      "Managing a collapsible `AI chat drawer` with streaming, threads, form state, and focus safety across navigation and pod updates.",
-      "Handling overlapping `pod dialogs` for creation, config edits, and status changes without breaking focus, scroll, or validation clarity.",
-      "Displaying large `pod tables` with copyable IDs, status details, row actions, and keyboard-safe interactions at scale.",
-    ],
-    solutions: [
-      "Used TanStack Query with a `5s refetch` cycle, scoped AbortSignals, semantic status badges, and redundant icon/text cues.",
-      "Built a Zustand-backed `chat drawer` with persisted history, auto-scroll streaming, guarded close states, and Sonner mutation feedback.",
-      "Structured dialogs with Radix focus traps, first-error focus, escape handling, auth-context inheritance, and confirm flows for destructive actions.",
-      "Implemented virtualized `pod tables` with ID truncation, copy buttons, status-scoped actions, CLS-safe skeletons, and keyboard detail expansion.",
-    ],
-  },
-  //internal organisation dashboard
-  {
-    type: "project",
-    slug: "org",
-    title: "Internal Organisation Dashboard",
-    col: 1,
-    order: 3,
-    media: [
-      {
-        type: "image",
-        src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/org.png",
-        alt: "ORG main product screen",
-      },
-      {
-        type: "image",
-        src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/org-2.png",
-        alt: "ORG workflow screen",
-      },
-      {
-        type: "image",
-        src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/org-3.png",
-        alt: "ORG detail screen",
-      },
-    ],
-    stack: [
-      "Next.js 16",
-      "React 19",
-      "TypeScript",
-      "Tailwind CSS",
-      "React Query (TanStack Query 5)",
-      "React Hook Form",
-      "Zod",
-      "Motion",
-    ],
-    description:
-      "An enterprise organization and team management interface that provides role-based visibility into operational structures, team hierarchies, and collaborative workflows. Built with Next.js 16 and dual AI backends (Google Gemini & DeepSeek), it enables administrators to manage departments, users, and organizational metadata while leveraging AI-powered insights for organizational optimization and team analytics.",
-    challenges: [
-      "Rendering expandable `org trees` with lazy-loaded subtrees and role-based visibility without DOM bloat or re-render cascades.",
-      "Managing dual-model `AI streaming` inside a persistent drawer while preserving threads, form state, and focus across navigation.",
-      "Building `permission matrices` with nested access states without unclear validation or accidental permission escalation.",
-      "Displaying large `user/team tables` with badges, row actions, bulk controls, and keyboard-safe interactions at scale.",
-    ],
-    solutions: [
-      "Used a virtualized `tree view` with Radix collapsibles, TanStack Query subtree loading, Zustand expansion state, and layout-stable skeletons.",
-      "Built a Zustand-backed `AI drawer` with model-indexed history, auto-scroll, preserved prompts, model switching, and guarded close states.",
-      "Structured permissions with Radix checkbox groups, explicit parent-child logic, Zod validation, confirmation dialogs, and read-only previews.",
-      "Implemented virtualized tables with scoped row actions, accessible Radix dropdowns, select-all bulk states, ID truncation, and CLS-safe skeletons.",
-    ],
-  },
+  // {
+  //   type: "project",
+  //   slug: "fund-dashboard",
+  //   title: "Fund Dashboard",
+  //   col: 1,
+  //   order: 2,
+  //   media: [
+  //     {
+  //       type: "image",
+  //       src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/fund-dashboard.png",
+  //       alt: "Fund Dashboard main overview screen",
+  //     },
+  //     {
+  //       type: "image",
+  //       src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/fund-dashboard-2.png",
+  //       alt: "Fund Dashboard portfolio analytics screen",
+  //     },
+  //     {
+  //       type: "image",
+  //       src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/fund-dashboard-3.png",
+  //       alt: "Fund Dashboard fund performance screen",
+  //     },
+  //     {
+  //       type: "image",
+  //       src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/fund-dashboard-4.png",
+  //       alt: "Fund Dashboard detail screen",
+  //     },
+  //   ],
+  //   stack: [
+  //     "Next.js 16 (Turbopack)",
+  //     "React 19",
+  //     "TypeScript",
+  //     "Tailwind CSS",
+  //     "React Query (TanStack Query 5)",
+  //     "React Hook Form",
+  //     "Zod",
+  //     "shadcn/ui",
+  //     "Zustand",
+  //   ],
+  //   description:
+  //     "An enterprise fintech operations dashboard for fund managers and administrators. It provides centralized control over token lifecycle management—including investor subscriptions, redemptions, transfers, distributions, and compliance workflows. Built with Next.js 16, React 19, and TypeScript, the dashboard connects to a backend API, integrates role-based access control, and displays real-time operational data in a clean, scannable interface optimized for high-frequency trading and settlement operations.",
+  //   challenges: [
+  //     "Rendering large `transaction tables` for investors, subscriptions, redemptions, and transfers without visual noise or information overload.",
+  //     "Supporting `fund manager` and admin views with different permissions while keeping one cohesive design system.",
+  //     "Displaying live `compliance counts` with instant updates and drill-down actions without overloading the header UI.",
+  //     "Creating scannable `status chips` across workflows with clear colors, icons, and restrained enterprise styling.",
+  //   ],
+  //   solutions: [
+  //     "Used dense `14px tables`, wallet truncation, inline copy actions, tabular alignment, scoped row actions, and explicit empty/loading/error states.",
+  //     "Built role-gated routes, conditional actions, and page-level authorization without permission-check shimmer or fragmented UI patterns.",
+  //     "Created a unified `compliance panel` with Fund Health, count groups, dividers, muted headers, and API-driven status totals.",
+  //     "Mapped API status strings to readable labels with discrete badge styles, icons, and restrained active/frozen/approved color states.",
+  //   ],
+  // },
+  // //ulejra landing page
+  // {
+  //   type: "project",
+  //   slug: "ulejra-site",
+  //   title: "Ulejra Landing Page",
+  //   col: 2,
+  //   order: 3,
+  //   media: [
+  //     {
+  //       type: "image",
+  //       src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/ulejra.jpeg",
+  //       alt: "Ulejra Site landing page screen",
+  //     },
+  //     {
+  //       type: "image",
+  //       src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/ulejra-1.png",
+  //       alt: "Ulejra Site landing page screen",
+  //     },
+  //   ],
+  //   stack: [
+  //     "Next.js 16",
+  //     "React 19",
+  //     "TypeScript",
+  //     "Tailwind CSS 4",
+  //     "Radix UI",
+  //     "Lucide Icons",
+  //     "Motion",
+  //     "OpenNext + Cloudflare Workers",
+  //     "Shadcn/ui",
+  //   ],
+  //   description:
+  //     "Ulejra is an institutional financial workflow infrastructure and marketing platform that serves treasury, compliance, settlement, and operational governance teams. Built with Next.js 16 and deployed via Cloudflare, it provides a light-only bordered institutional interface for managing digital asset programs, treasury coordination, and governed AI-assisted operations—with product-led storytelling through workflow mockups, dashboard previews, and audit trail visuals.",
+  //   challenges: [
+  //     "Keeping `full-width bordered bands`, `side rails`, and `max-w-7xl` containers consistent across responsive landing sections.",
+  //     "Embedding `dashboard mockups`, workflow previews, and ledger visuals as focal points without hurting performance or accessibility.",
+  //     "Converting dense desktop splits into clean mobile stacks while preserving `institutional hierarchy` and visual structure.",
+  //     "Using motion components like `SectionReveal`, `ShimmerText`, and grid effects without drifting into crypto-glow aesthetics.",
+  //   ],
+  //   solutions: [
+  //     "Standardized a `w-full border-y` band with an inner `mx-auto max-w-7xl border-x` container and repeated `GridSeparator` rhythm.",
+  //     "Placed product visuals inside controlled card containers using `bg-surface`, selective shadows, and minimal decorative layers.",
+  //     "Used responsive Tailwind layouts: `md:hidden` mobile cards, desktop split views, and single-column benefit stacks.",
+  //     "Kept motion restrained with short reveal transitions, `prefers-reduced-motion`, low-opacity grids, and limited shimmer usage.",
+  //   ],
+  // },
+  // // mof
+  // {
+  //   type: "project",
+  //   slug: "mof",
+  //   title: "MOF Dashboard",
+  //   col: 1,
+  //   order: 5,
+  //   media: [
+  //     {
+  //       type: "image",
+  //       src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/mof-4.png",
+  //       alt: "MOF main landing page screen",
+  //     },
+  //     {
+  //       type: "image",
+  //       src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/mof-2.png",
+  //       alt: "MOF detail section screen",
+  //     },
+  //     {
+  //       type: "image",
+  //       src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/mof-3.png",
+  //       alt: "MOF secondary page screen",
+  //     },
+  //     {
+  //       type: "image",
+  //       src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/mof-1.png",
+  //       alt: "MOF content section screen",
+  //     },
+  //   ],
+  //   stack: [
+  //     "Next.js 16",
+  //     "React 19",
+  //     "Tailwind CSS",
+  //     "React Query (TanStack Query 5)",
+  //     "React Hook Form",
+  //     "Zod",
+  //     "shadcn/ui + Radix UI",
+  //     "Vercel AI SDK (Google Gemini)",
+  //     "Drizzle ORM",
+  //     "Neon Serverless DB",
+  //     "AWS Amplify",
+  //   ],
+  //   description:
+  //     "An enterprise Kubernetes pod management dashboard with real-time monitoring, AI-powered insights, and portfolio analytics. Built with Next.js 16 and Google Gemini integration, it provides fund managers with a unified control plane for managing distributed pod resources, viewing live operational metrics, and leveraging AI chat for portfolio analysis—all while maintaining secure multi-user authentication and role-based access.",
+  //   challenges: [
+  //     "Rendering live `SSE pod updates` with metrics, syntax highlighting, and consistent status badges without DOM bloat or re-render cascades.",
+  //     "Managing a collapsible `AI chat drawer` with streaming, threads, form state, and focus safety across navigation and pod updates.",
+  //     "Handling overlapping `pod dialogs` for creation, config edits, and status changes without breaking focus, scroll, or validation clarity.",
+  //     "Displaying large `pod tables` with copyable IDs, status details, row actions, and keyboard-safe interactions at scale.",
+  //   ],
+  //   solutions: [
+  //     "Used TanStack Query with a `5s refetch` cycle, scoped AbortSignals, semantic status badges, and redundant icon/text cues.",
+  //     "Built a Zustand-backed `chat drawer` with persisted history, auto-scroll streaming, guarded close states, and Sonner mutation feedback.",
+  //     "Structured dialogs with Radix focus traps, first-error focus, escape handling, auth-context inheritance, and confirm flows for destructive actions.",
+  //     "Implemented virtualized `pod tables` with ID truncation, copy buttons, status-scoped actions, CLS-safe skeletons, and keyboard detail expansion.",
+  //   ],
+  // },
+  // //internal organisation dashboard
+  // {
+  //   type: "project",
+  //   slug: "org",
+  //   title: "Internal Organisation Dashboard",
+  //   col: 1,
+  //   order: 3,
+  //   media: [
+  //     {
+  //       type: "image",
+  //       src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/org.png",
+  //       alt: "ORG main product screen",
+  //     },
+  //     {
+  //       type: "image",
+  //       src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/org-2.png",
+  //       alt: "ORG workflow screen",
+  //     },
+  //     {
+  //       type: "image",
+  //       src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/org-3.png",
+  //       alt: "ORG detail screen",
+  //     },
+  //   ],
+  //   stack: [
+  //     "Next.js 16",
+  //     "React 19",
+  //     "TypeScript",
+  //     "Tailwind CSS",
+  //     "React Query (TanStack Query 5)",
+  //     "React Hook Form",
+  //     "Zod",
+  //     "Motion",
+  //   ],
+  //   description:
+  //     "An enterprise organization and team management interface that provides role-based visibility into operational structures, team hierarchies, and collaborative workflows. Built with Next.js 16 and dual AI backends (Google Gemini & DeepSeek), it enables administrators to manage departments, users, and organizational metadata while leveraging AI-powered insights for organizational optimization and team analytics.",
+  //   challenges: [
+  //     "Rendering expandable `org trees` with lazy-loaded subtrees and role-based visibility without DOM bloat or re-render cascades.",
+  //     "Managing dual-model `AI streaming` inside a persistent drawer while preserving threads, form state, and focus across navigation.",
+  //     "Building `permission matrices` with nested access states without unclear validation or accidental permission escalation.",
+  //     "Displaying large `user/team tables` with badges, row actions, bulk controls, and keyboard-safe interactions at scale.",
+  //   ],
+  //   solutions: [
+  //     "Used a virtualized `tree view` with Radix collapsibles, TanStack Query subtree loading, Zustand expansion state, and layout-stable skeletons.",
+  //     "Built a Zustand-backed `AI drawer` with model-indexed history, auto-scroll, preserved prompts, model switching, and guarded close states.",
+  //     "Structured permissions with Radix checkbox groups, explicit parent-child logic, Zod validation, confirmation dialogs, and read-only previews.",
+  //     "Implemented virtualized tables with scoped row actions, accessible Radix dropdowns, select-all bulk states, ID truncation, and CLS-safe skeletons.",
+  //   ],
+  // },
   //crypto token tracking software
-  {
-    type: "project",
-    slug: "taas",
-    title: "Crypto Token Tracking Software",
-    col: 2,
-    order: 5,
-    media: [
-      {
-        type: "image",
-        src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/taas.png",
-        alt: "TAAS main website screen",
-      },
-      {
-        type: "image",
-        src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/taas-1.png",
-        alt: "TAAS service section screen",
-      },
-      {
-        type: "image",
-        src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/taas-2.png",
-        alt: "TAAS content section screen",
-      },
-    ],
-    stack: ["Next.js", "Tailwind CSS", "Landing Page", "UI Design"],
-    description:
-      "A service-led website concept with a direct visual system, focused messaging, and conversion-oriented sections for a technical audience.",
-    challenges: [
-      "Making `crypto tracking` and `ops workflows` credible for technical users without generic `Web3` visuals or vague claims.",
-      "Keeping the page `conversion-focused` while clearly showing what is monitored and why it matters.",
-    ],
-    solutions: [
-      "Used `dashboard-led` visuals, direct copy, and restrained UI to frame tracking as an operational workflow.",
-      "Built modular `product`, `service`, and `CTA` sections with reusable `Tailwind` patterns for responsive scanning.",
-    ],
-  },
+  // {
+  //   type: "project",
+  //   slug: "taas",
+  //   title: "Crypto Token Tracking Software",
+  //   col: 2,
+  //   order: 5,
+  //   media: [
+  //     {
+  //       type: "image",
+  //       src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/taas.png",
+  //       alt: "TAAS main website screen",
+  //     },
+  //     {
+  //       type: "image",
+  //       src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/taas-1.png",
+  //       alt: "TAAS service section screen",
+  //     },
+  //     {
+  //       type: "image",
+  //       src: "https://pub-17f1ae3c481641228230d1b2dcdc07ff.r2.dev/projects/taas-2.png",
+  //       alt: "TAAS content section screen",
+  //     },
+  //   ],
+  //   stack: ["Next.js", "Tailwind CSS", "Landing Page", "UI Design"],
+  //   description:
+  //     "A service-led website concept with a direct visual system, focused messaging, and conversion-oriented sections for a technical audience.",
+  //   challenges: [
+  //     "Making `crypto tracking` and `ops workflows` credible for technical users without generic `Web3` visuals or vague claims.",
+  //     "Keeping the page `conversion-focused` while clearly showing what is monitored and why it matters.",
+  //   ],
+  //   solutions: [
+  //     "Used `dashboard-led` visuals, direct copy, and restrained UI to frame tracking as an operational workflow.",
+  //     "Built modular `product`, `service`, and `CTA` sections with reusable `Tailwind` patterns for responsive scanning.",
+  //   ],
+  // },
 ]
 
 export const portfolioShowcaseComponents: ProjectShowcaseComponent[] = [
