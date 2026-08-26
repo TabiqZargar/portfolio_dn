@@ -11,7 +11,7 @@ export const portfolioProjects: PortfolioProject[] = [
     col: 1,
     order: 1,
     media: [
-      { type: "placeholder", alt: "CodeScope AI overview" },
+      { type: "image", src: "/screenshots/codescope-ai.png", alt: "CodeScope AI overview", width: 1200, height: 800 },
     ],
     stack: [
       "React",
@@ -40,7 +40,7 @@ export const portfolioProjects: PortfolioProject[] = [
     col: 2,
     order: 1,
     media: [
-      { type: "placeholder", alt: "Study Runtime overview" },
+      { type: "image", src: "/screenshots/study-runtime.png", alt: "Study Runtime overview", width: 1200, height: 800 },
     ],
     stack: [
       "React",
@@ -70,7 +70,7 @@ export const portfolioProjects: PortfolioProject[] = [
     col: 1,
     order: 2,
     media: [
-      { type: "placeholder", alt: "GitScope overview" },
+      { type: "image", src: "/screenshots/gitscope.png", alt: "GitScope overview", width: 1200, height: 800 },
     ],
     stack: [
       "React",
@@ -98,7 +98,7 @@ export const portfolioProjects: PortfolioProject[] = [
     col: 2,
     order: 2,
     media: [
-      { type: "placeholder", alt: "ASCII Studio overview" },
+      { type: "image", src: "/screenshots/ascii-studio.png", alt: "ASCII Studio overview", width: 1200, height: 800 },
     ],
     stack: [
       "React",
@@ -126,7 +126,7 @@ export const portfolioProjects: PortfolioProject[] = [
     col: 1,
     order: 3,
     media: [
-      { type: "placeholder", alt: "Cube Timer overview" },
+      { type: "image", src: "/screenshots/cube-timer.png", alt: "Cube Timer overview", width: 1200, height: 800 },
     ],
     stack: [
       "React",
@@ -153,7 +153,7 @@ export const portfolioProjects: PortfolioProject[] = [
     col: 2,
     order: 3,
     media: [
-      { type: "placeholder", alt: "Netflix Clone overview" },
+      { type: "image", src: "/screenshots/netflix-clone.jpg", alt: "Netflix Clone overview", width: 1200, height: 800 },
     ],
     stack: [
       "React",
