@@ -27,14 +27,12 @@ describe("HomeIntroSection contact actions", () => {
     ).not.toBeInTheDocument()
   })
 
-  it("opens booking link in a new tab safely", () => {
+  it("links to the contact section on the same page", () => {
     render(<HomeIntroSection intro={mockIntro} />)
 
     const bookingLink = screen.getByRole("link", { name: /get in touch/i })
 
     expect(bookingLink).toHaveAttribute("href", portfolioContact.bookingHref)
-    expect(bookingLink).toHaveAttribute("target", "_blank")
-    expect(bookingLink).toHaveAttribute("rel", "noopener noreferrer")
     expect(bookingLink.className).toContain("max-w-48")
   })
 })

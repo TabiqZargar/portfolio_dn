@@ -2,15 +2,12 @@ import { BackToTop } from "@/components/portfolio/back-to-top"
 import type { SocialLink } from "@/constants/types"
 import { SectionDivider } from "./section-divider"
 import Link from "next/link"
-import { FooterBuildStack } from "@/constants/home/footer"
 
 type PortfolioFooterProps = {
   email: string
   phone: string
   phoneHref: string
   socialLinks: SocialLink[]
-  creditName: string
-  creditHref: string
   copyright: string
   backToTopHref?: string
 }
@@ -20,8 +17,6 @@ export const PortfolioFooter = ({
   phone,
   phoneHref,
   socialLinks,
-  creditName,
-  creditHref,
   copyright,
   backToTopHref = "#intro",
 }: PortfolioFooterProps) => {
@@ -29,7 +24,7 @@ export const PortfolioFooter = ({
     "inline-flex w-fit items-center underline hover:decoration-dotted underline-offset-4 transition-colors duration-portfolio ease-portfolio hover:text-muted-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gallery-white"
 
   return (
-    <footer className="relative w-full text-gallery-white">
+    <footer id="contact" className="relative w-full text-gallery-white">
       <SectionDivider />
       <div className="flex flex-col gap-framer-7 py-framer-8">
         <div className="flex flex-col gap-framer-3">
@@ -48,9 +43,11 @@ export const PortfolioFooter = ({
             <Link href={`mailto:${email}`} className={linkClassName}>
               {email}
             </Link>
-            <Link href={phoneHref} className={linkClassName}>
-              {phone}
-            </Link>
+            {phone && phoneHref && (
+              <Link href={phoneHref} className={linkClassName}>
+                {phone}
+              </Link>
+            )}
           </address>
 
           <nav
@@ -75,35 +72,8 @@ export const PortfolioFooter = ({
       <div className="flex flex-col gap-framer-3">
         <SectionDivider />
         <div className="flex flex-col items-start gap-framer-3 pr-14 type-label">
-          <p className="max-w-[480px] text-muted-foreground">
-            Designed and developed by{" "}
-            <a
-              href={creditHref}
-              target="_blank"
-              rel="noreferrer"
-              className="duration-portfolio text-gallery-white transition-colors ease-portfolio hover:text-muted-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gallery-white"
-            >
-              {creditName}
-            </a>
-          </p>
-          <div className="grid grid-cols-3">
-            <p className="text-muted-foreground">Built with</p>
-            <div className="col-span-2 flex flex-col gap-1.5 underline-offset-4">
-              {FooterBuildStack.map((item) => (
-                <Link
-                  href={item.href}
-                  target="_blank"
-                  key={item.name}
-                  className="w-fit cursor-pointer decoration-dotted hover:underline"
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-          </div>
           <div className="flex items-center gap-2 flex-wrap">
-          <p className="text-muted-foreground">{copyright}</p>
-          <Link href={creditHref} target="_blank" rel="noreferrer" className="type-label underline underline-offset-4 decoration-dotted hover:underline">Code</Link>
+            <p className="text-muted-foreground">{copyright}</p>
           </div>
         </div>
       </div>

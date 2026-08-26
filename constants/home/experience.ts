@@ -6,6 +6,6 @@ export const homeExperience: Experience[] = [
     company: "ZeTheta",
     dates: "Aug 2026 — Sep 2026",
     description:
-      "Built a multi-step loan application form for a remote live project program using React, TypeScript, React Hook Form, Zod, and Zustand. Implemented document upload with compression, e-signature capture, autosave/resume, conditional rendering, EMI calculation, and responsive UI.",
+      "Remote Live Project Work Experience Program. Worked across four projects: Front End Developer Multi Step Loan Application Form using React, TypeScript, React Hook Form, Zod, and Zustand; Custom API Integration; DevOps & Cloud Engineer Multi Region DR Architecture Payment Systems; and Event Driven Notification Engine.",
   },
 ]

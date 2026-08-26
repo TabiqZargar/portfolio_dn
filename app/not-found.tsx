@@ -40,8 +40,6 @@ export default function NotFound() {
             phone={portfolioContact.phone}
             phoneHref={portfolioContact.phoneHref}
             socialLinks={portfolioSocialLinks}
-            creditName={portfolioContact.creditName}
-            creditHref={portfolioContact.creditHref}
             copyright={portfolioContact.copyright}
             backToTopHref="#intro"
           />

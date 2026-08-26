@@ -72,8 +72,6 @@ export const HomeIntroSection = ({ intro }: HomeIntroSectionProps) => {
       <BookACallLink
         href={portfolioContact.bookingHref}
         imageSrc="/logo.png"
-        target="_blank"
-        rel="noopener noreferrer"
       />
     </section>
   )
