@@ -4,15 +4,15 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun --bun next dev",
-    "build": "bun --bun next build",
-    "start": "bun --bun next start",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "oxlint",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "check": "bun run lint && bun run typecheck && bun run test"
+    "check": "npm run lint && npm run typecheck && npm run test"
   },
   "dependencies": {
     "@base-ui/react": "^1.5.0",
