@@ -1,7 +1,6 @@
 import { BackToTop } from "@/components/portfolio/back-to-top"
 import type { SocialLink } from "@/constants/types"
 import { SectionDivider } from "./section-divider"
-import Image from "next/image"
 import Link from "next/link"
 import { FooterBuildStack } from "@/constants/home/footer"
 
@@ -85,20 +84,10 @@ export const PortfolioFooter = ({
               className="duration-portfolio text-gallery-white transition-colors ease-portfolio hover:text-muted-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gallery-white"
             >
               {creditName}
-            </a>{" "}
-            <span className="inline-flex items-center gap-2 align-middle">
-              <span>and</span>
-              <Image
-                src={"/home-icons/redbull.png"}
-                className="h-6 w-3"
-                height={34}
-                width={34}
-                alt="redbull"
-              />
-            </span>
+            </a>
           </p>
           <div className="grid grid-cols-3">
-            <p className="text-muted-foreground">Thanks to</p>
+            <p className="text-muted-foreground">Built with</p>
             <div className="col-span-2 flex flex-col gap-1.5 underline-offset-4">
               {FooterBuildStack.map((item) => (
                 <Link
@@ -112,35 +101,9 @@ export const PortfolioFooter = ({
               ))}
             </div>
           </div>
-          <div className="grid w-full grid-cols-3">
-            <p className="text-muted-foreground">Inspired from</p>
-            <div className="col-span-2 flex flex-col gap-1.5 underline-offset-4">
-              {[{
-                name: "Manu Paaji",
-                href: "https://x.com/mannupaaji"
-              },  {
-                name: "Ana Howard",
-                href: "https://x.com/AnaArsonist"
-              },
-              {
-                name: "Jordan Jenkins",
-                href: "https://x.com/jkane"
-              },
-              ].map((item) => (
-                <Link
-                  href={item.href}
-                  target="_blank"
-                  key={item.name}
-                  className="w-fit cursor-pointer decoration-dotted hover:underline"
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
-          </div>
           <div className="flex items-center gap-2 flex-wrap">
           <p className="text-muted-foreground">{copyright}</p>
-          <Link href={"https://github.com/diip3sh/portfolio"} target="_blank" rel="noreferrer" className="type-label underline underline-offset-4 decoration-dotted hover:underline">Code</Link>
+          <Link href={creditHref} target="_blank" rel="noreferrer" className="type-label underline underline-offset-4 decoration-dotted hover:underline">Code</Link>
           </div>
         </div>
       </div>

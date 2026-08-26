@@ -1,8 +1,7 @@
-# Dipesh | Design Engineer Portfolio
+# Tabiq | Full Stack Developer Portfolio
 
-A production portfolio for a design engineer building polished digital products with strong interface craft, motion, and modern web tooling. It gives recruiters, design clients, and engineering clients a fast way to evaluate the work, inspect the implementation quality, and get in touch.
+A production portfolio for a full stack developer building end-to-end web applications with modern frameworks, clean architecture, and practical engineering.
 
-[![Live site](https://img.shields.io/badge/Live%20site-diip3sh.xyz-111111?style=for-the-badge)](https://diip3sh.xyz)
 [![Next.js](https://img.shields.io/badge/Next.js-16-000000?style=for-the-badge&logo=nextdotjs)](https://nextjs.org)
 [![React](https://img.shields.io/badge/React-19-149ECA?style=for-the-badge&logo=react&logoColor=white)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -13,7 +12,7 @@ A production portfolio for a design engineer building polished digital products 
 
 ## Why this exists
 
-The portfolio is designed as evidence of the work itself: precise visual systems, thoughtful interaction details, accessible UI, responsive layouts, and production-ready frontend structure. The goal is not only to list projects, but to make the interface demonstrate design judgment and engineering quality.
+The portfolio is designed as evidence of the work itself: precise visual systems, thoughtful interaction details, accessible UI, responsive layouts, and production-ready frontend structure. The goal is not only to list projects, but to make the interface demonstrate engineering quality.
 
 ## Highlights
 

@@ -5,37 +5,31 @@ export const HomeHobbiesSection = () => {
   return (
     <HomeSection id="hobbies" title="Conversation starter">
       <span className="type-label text-muted-foreground">
-        <span className="text-gallery-white">I like trying new things,</span>{" "}
-        and diving deeply into each. Now I can&apos;t live without{" "}
+        <span className="text-gallery-white">Outside of code,</span>{" "}
+        I spend time with{" "}
         <span className="text-gallery-white">
           <HoverTextPreview
-            previewImage={["/hobbies/dbz.png", "/hobbies/one-piece.png"]}
-            imageAlt={["Dragon Ball Z", "One Piece"]}
+            previewImage={[]}
+            imageAlt={[]}
           >
-            anime
-          </HoverTextPreview>
-          , designing,{" "}
-          <HoverTextPreview
-            previewImage={[
-              "/hobbies/tb.png",
-              "/hobbies/netflix.svg",
-              "/hobbies/bb.png",
-            ]}
-            imageAlt={["The Bear", "Netflix", "Breaking Bad"]}
-          >
-            binge watching film and tv series
+            motorcycles
           </HoverTextPreview>
           ,{" "}
           <HoverTextPreview
-            previewImage={["/hobbies/f1.png", "/hobbies/ucl.png"]}
-            imageAlt={["Formula 1", "UEFA Champions League"]}
+            previewImage={[]}
+            imageAlt={[]}
           >
-            sports
+            football
           </HoverTextPreview>
-          ,
-        </span>{" "}
-        and most importantly,
-        <span className="text-gallery-white"> my family.</span>
+          , and{" "}
+          <HoverTextPreview
+            previewImage={[]}
+            imageAlt={[]}
+          >
+            MMA
+          </HoverTextPreview>
+        </span>
+        .
       </span>
     </HomeSection>
   )

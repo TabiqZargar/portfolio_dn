@@ -7,14 +7,6 @@ type ProjectRightColumnProps = {
 }
 
 export const ProjectRightColumn = ({ project }: ProjectRightColumnProps) => {
-  const galleryImages =
-    project.slug === "ulejra-site"
-      ? project.media.filter(
-          (media) =>
-            "src" in media && media.src.endsWith("/projects/ulejra-1.png")
-        )
-      : project.media
-
   return (
     <ScrollColumn
       ariaLabel={`${project.title} media gallery`}
@@ -22,7 +14,7 @@ export const ProjectRightColumn = ({ project }: ProjectRightColumnProps) => {
       contentClassName="flex w-full flex-col items-center gap-framer-2 px-framer-5 pt-[17px] pb-framer-10 md:pr-framer-5 md:pb-framer-5 md:pl-0"
       showProgress={false}
     >
-      <ProjectImageGallery images={galleryImages} />
+      <ProjectImageGallery images={project.media} />
     </ScrollColumn>
   )
 }

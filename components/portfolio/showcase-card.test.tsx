@@ -26,7 +26,7 @@ const videoShowcase: ProjectShowcaseComponent = {
   col: 1,
   order: 1,
   stack: ["Motion"],
-  xLink: "https://x.com/diip3sh",
+  xLink: "",
   media: {
     type: "video",
     src: "https://example.com/showcase.mp4",
@@ -42,7 +42,7 @@ const componentShowcase: ProjectShowcaseComponent = {
   col: 1,
   order: 2,
   stack: ["React"],
-  xLink: "https://x.com/diip3sh",
+  xLink: "",
   media: {
     type: "component",
     componentKey: "missing-component",

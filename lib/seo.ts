@@ -1,17 +1,17 @@
-export const SITE_URL = new URL("https://diip3sh.xyz")
+export const SITE_URL = new URL("https://tabiq.dev")
 
-export const SITE_NAME = "Dipesh"
-export const SITE_TITLE = "Dipesh | Design Engineer"
+export const SITE_NAME = "Tabiq"
+export const SITE_TITLE = "Tabiq | Full Stack Developer"
 export const SITE_DESCRIPTION =
-  "Dipesh is a design engineer from India building polished digital products with thoughtful UX, motion, and modern web technology."
-export const SITE_LOCALE = "en_IN"
-export const X_HANDLE = "@diip3sh"
+  "Tabiq is a full stack developer building end-to-end web applications with modern frameworks, clean architecture, and practical engineering."
+export const SITE_LOCALE = "en_US"
+export const X_HANDLE = ""
 
 export const DEFAULT_SOCIAL_IMAGE = {
   url: "/og-image.png",
   width: 1622,
   height: 970,
-  alt: "Dipesh — Design Engineer from India",
+  alt: "Tabiq — Full Stack Developer",
 } as const
 
 export const createMetadataDescription = (

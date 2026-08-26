@@ -97,14 +97,14 @@ export const HolographicReferralCard = ({
   image = INVITE_BACKGROUND_URL,
   imageAlt = "Invite background",
   title = "Portfolio",
-  description = "#diip3sh",
+  description = "#Tabiq",
   logo = defaultLogo,
   logoAlt = "Card logo",
   secondLogo = "/home-icons/x-dark.svg",
   secondLogoAlt = "X logo",
   secondLogoHref,
   secondLogoAriaLabel = "Open link",
-  ariaLabel = "invite card for #diip3sh",
+  ariaLabel = "invite card for Tabiq",
   className,
 }: HolographicReferralCardProps) => {
   const shouldReduceMotion = Boolean(useReducedMotion())

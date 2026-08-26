@@ -576,13 +576,13 @@ Follows the same capture rules as `docs/404.md`:
 ### Phone Content Provided For Integration
 
 - Portfolio name/role/description: TBD (replacing Kima Davidson template copy)
-- Email: `pilladipesh.pd@gmail.com`
-- Phone: `+91 7993097879`
-- Twitter/X: `https://x.com/diip3sh`
-- LinkedIn: `https://www.linkedin.com/in/diip3sh/`
+- Email: `[your-email]`
+- Phone: `[your-phone]`
+- Twitter/X: not provided
+- LinkedIn: not provided
 - Telegram: URL not provided
-- Credit: `Designed by diip3sh`
-- Credit link: `https://x.com/diip3sh`
+- Credit: `Designed by Tabiq`
+- Credit link: `https://github.com/TabiqZargar`
 - Copyright: `© 2026 Open source, free to use`
 
 ### Phone Integration Implications
