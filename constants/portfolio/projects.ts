@@ -162,17 +162,16 @@ export const portfolioProjects: PortfolioProject[] = [
     title: "YouTube Clone",
     col: 2,
     order: 3,
+    githubUrl: "https://github.com/TabiqZargar/Backend_yt",
     media: [
       { type: "image", src: "/screenshots/youtube-clone-cover.png", alt: "YouTube Clone overview", width: 1200, height: 800 },
     ],
     stack: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Framer Motion",
+      "JavaScript",
+      "Node.js",
     ],
     description:
-      "A front-end recreation of a video streaming interface. Implements the horizontal scroll carousel layout, search functionality, and responsive video preview interactions for browsing a catalog of videos.",
+      "A backend service built with JavaScript for a YouTube-style video platform. Provides the API layer that powers video browsing, catalog data, and the playback experience for the YouTube Clone.",
     challenges: [
       "Replicating the `horizontal carousel` scroll behavior with smooth momentum and peek preview.",
       "Building a `search interface` that provides instant results without excessive API requests.",
