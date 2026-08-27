@@ -28,9 +28,11 @@ const ProjectImageMedia = ({
   isPriority: boolean
   media: Extract<PortfolioProject["media"][number], { type: "image" }>
 }) => {
+  const [isReady, setIsReady] = useState(false)
+
   return (
-    <div className="relative overflow-hidden bg-portfolio-media">
-      <MediaPlaceholder variant="image" />
+    <div className="relative overflow-hidden bg-black p-framer-3">
+      <MediaPlaceholder variant="image" isVisible={!isReady} />
       <Image
         src={media.src}
         alt={media.alt}
@@ -40,7 +42,8 @@ const ProjectImageMedia = ({
         sizes="(min-width: 1200px) 33vw, (min-width: 810px) 50vw, 100vw"
         loading={isPriority ? "eager" : "lazy"}
         fetchPriority={isPriority ? "high" : "auto"}
-        className="relative z-10 h-auto w-full rounded-sm object-cover"
+        onLoad={() => setIsReady(true)}
+        className="relative z-10 h-auto w-full rounded-sm bg-black object-cover"
       />
     </div>
   )
@@ -54,7 +57,7 @@ const ProjectVideoMedia = ({
   const [isReady, setIsReady] = useState(false)
 
   return (
-    <div className="relative overflow-hidden bg-portfolio-media">
+    <div className="relative overflow-hidden bg-black p-framer-3">
       <MediaPlaceholder variant="video" isVisible={!isReady} />
       <video
         key={media.src}

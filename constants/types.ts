@@ -40,6 +40,8 @@ export type PortfolioProject = {
   description: string
   solutions?: string[]
   challenges?: string[]
+  githubUrl?: string
+  liveUrl?: string
 }
 
 export type ProjectShowcaseComponent = {

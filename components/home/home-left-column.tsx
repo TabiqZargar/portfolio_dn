@@ -1,20 +1,22 @@
 import { HomeAboutSection } from "@/components/home/home-about"
-import { HomeCertificationsSection } from "@/components/home/home-awards"
+// TODO: Enable Certifications section when content is added.
+// import { HomeCertificationsSection } from "@/components/home/home-awards"
 import { HomeClientsSection } from "@/components/home/home-clients"
 import { HomeExperienceSection } from "@/components/home/home-experience"
 import { HomeHobbiesSection } from "@/components/home/home-hobbies"
 import { HomeIntroSection } from "@/components/home/home-intro"
 import { HomeStackSection } from "@/components/home/home-stack"
-import { HomeVaultSection } from "@/components/home/home-vault"
+// TODO: Enable Vault section when content is added.
+// import { HomeVaultSection } from "@/components/home/home-vault"
 import { ScrollColumn } from "@/components/portfolio/scroll-column"
 import { PortfolioFooter } from "@/components/portfolio/portfolio-footer"
 import { homeAbout, homeStats } from "@/constants/home/about"
-import { homeCertifications } from "@/constants/home/certification"
+// import { homeCertifications } from "@/constants/home/certification"
 import { homeClients } from "@/constants/home/clients"
 import { homeExperience } from "@/constants/home/experience"
 import { homeIntro } from "@/constants/home/intro"
 import { homeStack } from "@/constants/home/stack"
-import { homeVault } from "@/constants/home/vault"
+// import { homeVault } from "@/constants/home/vault"
 import { portfolioContact } from "@/constants/portfolio/contact"
 import { portfolioSocialLinks } from "@/constants/portfolio/social"
 
@@ -35,8 +37,10 @@ export const HomeLeftColumn = () => {
       />
       <HomeStackSection tools={homeStack} />
       <HomeExperienceSection experience={homeExperience} />
+      {/* TODO: Re-enable once sections have content.
       <HomeCertificationsSection certifications={homeCertifications} />
       <HomeVaultSection items={homeVault} />
+      */}
       <HomeHobbiesSection />
       <PortfolioFooter
         email={portfolioContact.email}

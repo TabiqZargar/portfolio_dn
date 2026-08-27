@@ -10,6 +10,8 @@ export const portfolioProjects: PortfolioProject[] = [
     title: "CodeScope AI",
     col: 1,
     order: 1,
+    githubUrl: "https://github.com/TabiqZargar/CodeScope-AI",
+    liveUrl: "https://code-scope-ai-inky.vercel.app/",
     media: [
       { type: "image", src: "/screenshots/codescope-ai.png", alt: "CodeScope AI overview", width: 1200, height: 800 },
     ],
@@ -39,6 +41,8 @@ export const portfolioProjects: PortfolioProject[] = [
     title: "Study Runtime",
     col: 2,
     order: 1,
+    githubUrl: "https://github.com/TabiqZargar/Smart-Exam-Planner",
+    liveUrl: "https://smart-exam-planner.vercel.app/",
     media: [
       { type: "image", src: "/screenshots/study-runtime.png", alt: "Study Runtime overview", width: 1200, height: 800 },
     ],
@@ -69,6 +73,8 @@ export const portfolioProjects: PortfolioProject[] = [
     title: "GitScope",
     col: 1,
     order: 2,
+    githubUrl: "https://github.com/TabiqZargar/GitScope",
+    liveUrl: "https://git-scope-mu.vercel.app/",
     media: [
       { type: "image", src: "/screenshots/gitscope.png", alt: "GitScope overview", width: 1200, height: 800 },
     ],
@@ -97,6 +103,8 @@ export const portfolioProjects: PortfolioProject[] = [
     title: "ASCII Studio",
     col: 2,
     order: 2,
+    githubUrl: "https://github.com/TabiqZargar/Ascii-Studio",
+    liveUrl: "https://ascii-studio-lovat.vercel.app/",
     media: [
       { type: "image", src: "/screenshots/ascii-studio.png", alt: "ASCII Studio overview", width: 1200, height: 800 },
     ],
@@ -125,6 +133,8 @@ export const portfolioProjects: PortfolioProject[] = [
     title: "Cube Timer",
     col: 1,
     order: 3,
+    githubUrl: "https://github.com/TabiqZargar/Cube",
+    liveUrl: "https://tabiqzargar.github.io/Cube/",
     media: [
       { type: "image", src: "/screenshots/cube-timer.png", alt: "Cube Timer overview", width: 1200, height: 800 },
     ],
@@ -148,22 +158,21 @@ export const portfolioProjects: PortfolioProject[] = [
   },
   {
     type: "project",
-    slug: "netflix-clone",
-    title: "Netflix Clone",
+    slug: "youtube-clone",
+    title: "YouTube Clone",
     col: 2,
     order: 3,
     media: [
-      { type: "image", src: "/screenshots/netflix-clone.jpg", alt: "Netflix Clone overview", width: 1200, height: 800 },
+      { type: "image", src: "/screenshots/youtube-clone-cover.png", alt: "YouTube Clone overview", width: 1200, height: 800 },
     ],
     stack: [
       "React",
       "TypeScript",
-      "TMDB API",
       "Tailwind CSS",
       "Framer Motion",
     ],
     description:
-      "A front-end recreation of Netflix's browsing interface using the TMDB API for movie and TV show data. Implements the horizontal scroll carousel layout, search functionality, and responsive video preview interactions.",
+      "A front-end recreation of a video streaming interface. Implements the horizontal scroll carousel layout, search functionality, and responsive video preview interactions for browsing a catalog of videos.",
     challenges: [
       "Replicating the `horizontal carousel` scroll behavior with smooth momentum and peek preview.",
       "Building a `search interface` that provides instant results without excessive API requests.",

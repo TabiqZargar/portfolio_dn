@@ -23,7 +23,11 @@ export const ProjectLeftColumn = ({ project }: ProjectLeftColumnProps) => {
         title={project.title}
         description={project.description}
       />
-      <ProjectMetadata stack={project.stack} />
+      <ProjectMetadata
+        stack={project.stack}
+        githubUrl={project.githubUrl}
+        liveUrl={project.liveUrl}
+      />
       <ProjectChallengesSolutions
         challenges={project.challenges}
         solutions={project.solutions}

@@ -3,7 +3,6 @@ import type { HomeIntro } from "@/constants/types"
 import { FrontSVG } from "../svgs/front-svg"
 import { portfolioContact } from "@/constants/portfolio/contact"
 import { BookACallLink } from "../ui/book-a-call-link"
-import { AvatarCard } from "./avatar-card"
 
 type HomeIntroSectionProps = {
   intro: HomeIntro
@@ -16,14 +15,7 @@ export const HomeIntroSection = ({ intro }: HomeIntroSectionProps) => {
       aria-labelledby="intro-name"
       className="mt-8 flex w-full flex-col gap-framer-8"
     >
-      <div className="flex w-full items-center justify-center gap-framer-3">
-        <AvatarCard
-          name="Tabiq"
-          handle="Full Stack Developer"
-          referralCode="TABIQ-ZARGAR"
-          tier="Developer"
-          accent="aurora"
-        />
+      <div className="flex w-full items-center gap-framer-3">
         <div className="flex min-w-0 flex-1 flex-col">
           <h1 id="intro-name" className="type-heading-2 text-muted-foreground">
             @{intro.name}

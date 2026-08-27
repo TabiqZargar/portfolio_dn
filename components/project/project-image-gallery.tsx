@@ -15,7 +15,7 @@ const GalleryImage = ({
 }) => {
   if (image.type === "image") {
     return (
-      <div className="overflow-hidden rounded-project bg-portfolio-media">
+      <div className="overflow-hidden rounded-project bg-black p-framer-3">
         <Image
           src={image.src}
           alt={image.alt}

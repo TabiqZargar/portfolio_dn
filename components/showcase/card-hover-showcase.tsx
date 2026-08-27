@@ -11,8 +11,7 @@ import {
 
 import { cn } from "@/lib/utils"
 
-const AVATAR_URL = "/logo.svg"
-const INVITE_BACKGROUND_URL = "/logo.png"
+const INVITE_BACKGROUND_URL = "/x-pfp.jpg"
 
 export type CardLogo =
   | ReactNode
@@ -88,22 +87,17 @@ const renderLogo = (logo: CardLogo, className: string, fallbackAlt: string) => {
   return logo
 }
 
-const defaultLogo: CardLogo = {
-  src: AVATAR_URL,
-  alt: "Comet avatar",
-}
-
 export const HolographicReferralCard = ({
   image = INVITE_BACKGROUND_URL,
   imageAlt = "Invite background",
   title = "Portfolio",
   description = "#Tabiq",
-  logo = defaultLogo,
+  logo,
   logoAlt = "Card logo",
   secondLogo = "/home-icons/x-dark.svg",
   secondLogoAlt = "X logo",
-  secondLogoHref,
-  secondLogoAriaLabel = "Open link",
+  secondLogoHref = "https://x.com/tabiqzargar",
+  secondLogoAriaLabel = "View Tabiq on X",
   ariaLabel = "invite card for Tabiq",
   className,
 }: HolographicReferralCardProps) => {
@@ -192,7 +186,11 @@ export const HolographicReferralCard = ({
         )}
       >
         <div className="mb-2 flex shrink-0 items-center justify-between p-2">
-          {renderLogo(logo, "size-7 rounded-full object-cover", logoAlt)}
+          {logo ? (
+            renderLogo(logo, "size-7 rounded-full object-cover", logoAlt)
+          ) : (
+            <span className="size-5" />
+          )}
           {secondLogoHref ? (
             <a
               aria-label={secondLogoAriaLabel}

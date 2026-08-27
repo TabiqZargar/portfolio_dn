@@ -5,7 +5,7 @@ export const SITE_TITLE = "Tabiq | Full Stack Developer"
 export const SITE_DESCRIPTION =
   "Tabiq is a full stack developer building end-to-end web applications with modern frameworks, clean architecture, and practical engineering."
 export const SITE_LOCALE = "en_US"
-export const X_HANDLE = ""
+export const X_HANDLE = "@tabiqzargar"
 
 export const DEFAULT_SOCIAL_IMAGE = {
   url: "/og-image.png",
