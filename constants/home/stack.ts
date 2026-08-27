@@ -59,6 +59,8 @@ export const homeStack: StackTool[] = [
     name: "Prisma",
     description: "Next-generation ORM for Node.js.",
     iconSrc: "/home-icons/prisma.svg",
+    iconSrcDark: "/home-icons/prisma-dark.svg",
+    iconSrcLight: "/home-icons/prisma-light.svg",
     link: "https://www.prisma.io/",
   },
   {
@@ -71,6 +73,8 @@ export const homeStack: StackTool[] = [
     name: "GitHub",
     description: "Code hosting and collaboration.",
     iconSrc: "/home-icons/github.svg",
+    iconSrcDark: "/home-icons/GitHub_dark.svg",
+    iconSrcLight: "/home-icons/GitHub_light.svg",
     link: "https://github.com/",
   },
 ]
