@@ -42,7 +42,7 @@ type BookACallLinkProps = Omit<
 
 export const BookACallLink = ({
   href,
-  imageSrc = "/logo.png",
+  imageSrc = "/x-pfp.jpg",
   defaultText = "GET IN TOUCH",
   hoverText = "Let's Talk!",
   className,

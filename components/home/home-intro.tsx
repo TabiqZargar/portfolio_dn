@@ -63,7 +63,7 @@ export const HomeIntroSection = ({ intro }: HomeIntroSectionProps) => {
       </p>
       <BookACallLink
         href={portfolioContact.bookingHref}
-        imageSrc="/logo.png"
+        imageSrc="/x-pfp.jpg"
       />
     </section>
   )
