@@ -136,7 +136,7 @@ export const portfolioProjects: PortfolioProject[] = [
     githubUrl: "https://github.com/TabiqZargar/Cube",
     liveUrl: "https://tabiqzargar.github.io/Cube/",
     media: [
-      { type: "image", src: "/screenshots/cube-timer.png", alt: "Cube Timer overview", width: 1200, height: 800 },
+      { type: "image", src: "/screenshots/cube-timer.png", alt: "Cube Timer overview", width: 1689, height: 1920 },
     ],
     stack: [
       "React",
