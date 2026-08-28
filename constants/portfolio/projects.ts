@@ -106,7 +106,7 @@ export const portfolioProjects: PortfolioProject[] = [
     githubUrl: "https://github.com/TabiqZargar/Ascii-Studio",
     liveUrl: "https://ascii-studio-lovat.vercel.app/",
     media: [
-      { type: "image", src: "/screenshots/ascii-studio.png", alt: "ASCII Studio overview", width: 1200, height: 800 },
+      { type: "image", src: "/screenshots/ascii-studio.png", alt: "ASCII Studio overview", width: 659, height: 756 },
     ],
     stack: [
       "React",
