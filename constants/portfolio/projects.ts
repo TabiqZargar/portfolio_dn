@@ -76,7 +76,7 @@ export const portfolioProjects: PortfolioProject[] = [
     githubUrl: "https://github.com/TabiqZargar/GitScope",
     liveUrl: "https://git-scope-mu.vercel.app/",
     media: [
-      { type: "image", src: "/screenshots/gitscope.png", alt: "GitScope overview", width: 1200, height: 800 },
+      { type: "image", src: "/screenshots/gitscope.svg", alt: "GitScope overview", width: 1200, height: 635 },
     ],
     stack: [
       "React",
