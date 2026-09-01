@@ -44,7 +44,7 @@ export const portfolioProjects: PortfolioProject[] = [
     githubUrl: "https://github.com/TabiqZargar/Smart-Exam-Planner",
     liveUrl: "https://smart-exam-planner.vercel.app/",
     media: [
-      { type: "image", src: "/screenshots/study-runtime.png", alt: "Study Runtime overview", width: 1200, height: 800 },
+      { type: "image", src: "/screenshots/study-runtime.png", alt: "Study Runtime overview", width: 1748, height: 1240 },
     ],
     stack: [
       "React",
