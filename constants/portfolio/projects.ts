@@ -13,7 +13,7 @@ export const portfolioProjects: PortfolioProject[] = [
     githubUrl: "https://github.com/TabiqZargar/CodeScope-AI",
     liveUrl: "https://code-scope-ai-inky.vercel.app/",
     media: [
-      { type: "image", src: "/screenshots/codescope-ai.png", alt: "CodeScope AI overview", width: 1376, height: 768 },
+      { type: "image", src: "/screenshots/codescope-ai.png", alt: "CodeScope AI overview", width: 1448, height: 1086 },
     ],
     stack: [
       "React",
