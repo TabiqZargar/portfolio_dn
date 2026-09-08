@@ -132,7 +132,7 @@ export const portfolioProjects: PortfolioProject[] = [
     slug: "cube-timer",
     title: "Cube Timer",
     col: 1,
-    order: 3,
+    order: 4,
     githubUrl: "https://github.com/TabiqZargar/Cube",
     liveUrl: "https://tabiqzargar.github.io/Cube/",
     media: [
@@ -196,7 +196,7 @@ export const portfolioShowcaseComponents: ProjectShowcaseComponent[] = [
       alt: "Interactive holographic card hover component",
     },
     col: 1,
-    order: 4,
+    order: 3,
     xLink: "",
     prompt: "Create a reusable Holographic Referral Card component for an existing React + TypeScript codebase.",
   },
