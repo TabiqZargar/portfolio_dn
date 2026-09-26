@@ -183,6 +183,39 @@ export const portfolioProjects: PortfolioProject[] = [
       "Used `responsive grid` and breakpoint-aware component rendering for consistent cross-device layout.",
     ],
   },
+  {
+    type: "project",
+    slug: "php-academy",
+    title: "PHP Academy",
+    col: 2,
+    order: 4,
+    githubUrl: "https://github.com/TabiqZargar/php_learn",
+    liveUrl: "https://php-learn-wine.vercel.app/",
+    media: [
+      { type: "image", src: "/screenshots/php-academy.png", alt: "PHP Academy programs list with an inline PHP editor and expected output test cases", width: 1920, height: 928 },
+      { type: "image", src: "/screenshots/php-academy-desktop.png", alt: "PHP Academy Windows XP-style My Computer desktop with the learning home, practice, and reference windows", width: 1920, height: 919 },
+      { type: "image", src: "/screenshots/php-academy-lesson.png", alt: "PHP Academy lesson view for PHP Introduction with lesson navigation and progress tracking", width: 1918, height: 914 },
+      { type: "image", src: "/screenshots/php-academy-reference.png", alt: "PHP Academy PHP reference browser with category filters and a searchable entry list", width: 1920, height: 911 },
+    ],
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "PHP",
+    ],
+    description:
+      "An interactive PHP learning platform built around a Windows XP-inspired desktop. Structured lessons, hands-on PHP practice with an in-browser editor, automated test-case evaluation, progressive hints, saved progress, and a built-in PHP reference — covering the language from basics through sessions, cookies, the filesystem, and MySQL.",
+    challenges: [
+      "Presenting `13 structured lessons` and `18 practice programs` through a desktop metaphor without making the learning path harder to navigate.",
+      "Evaluating learner-submitted PHP against `test cases` in a way that returns `progressive hints` instead of a bare pass or fail.",
+      "Persisting `learning progress` and `resume state` across sessions while keeping the browser, `sessions and cookies`, and `filesystem` exercises self-contained.",
+    ],
+    solutions: [
+      "Built a `Windows XP-inspired shell` with a start menu, My Computer view, and windows for the learning home, practice, and reference.",
+      "Added an `interactive PHP editor` with `automated test-case evaluation` that runs the submitted code and reports expected output next to the result.",
+      "Organised the material into a `13-lesson track`, `18 hands-on programs`, and an `80-entry PHP reference` searchable by category, plus `MySQL / mysqli` exercises and a `PHP MySQL login system`.",
+    ],
+  },
 ]
 
 export const portfolioShowcaseComponents: ProjectShowcaseComponent[] = [
