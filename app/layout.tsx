@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: "/vercel.jpeg",
-    shortcut: "/vercel.jpeg",
-    apple: "/vercel.jpeg",
+    icon: "/vercel.png",
+    shortcut: "/vercel.png",
+    apple: "/vercel.png",
   },
   openGraph: {
     type: "website",
